@@ -1,0 +1,12 @@
+def prime_number(n):
+    x = 1
+    for x in range(1, n):
+        x += 1
+        if n % x == 0:
+            return False
+        else:
+            return True
+n = input('Enter a number to check for prime ')
+print('Is that number really a prime number? ')
+n = int(n)
+prime_number(n)
